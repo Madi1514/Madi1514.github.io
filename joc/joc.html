@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghiceste Numărul</title>
+    <style>
+        body{
+            background:linear-gradient(135deg, #667eea, #764ba2);
+        }
+           h1{
+            text-align: center;
+            margin-top: 15%;
+        }
+        
+        div , p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Ghiceste Numarul </h1>
+<p>Numarul este intre 1 si 5</p>
+<div>
+<input type="number" id="guess" placeholder="Introdu un numar">
+<button onclick="checkGuess()">Verifica</button>
+<p id="result"></p>
+</div>
+<a href="index.html">
+
+    <script>
+        let randomNumber=Math.floor(Math.random()* 5 ) +1 
+        function checkGuess(){
+            let guess=Number(document.getElementById("guess").value)
+            let result=document.getElementById("result")
+
+            if(guess===randomNumber){
+                result.textContent="Felicitari!Ai ghicit!"
+            }else{
+
+            result.textContent="Gresit!Mai incearca!"
+        
+           }
+        }
+    </script>
+
+</body>
+</html>

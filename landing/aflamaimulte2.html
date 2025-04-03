@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html,body{
+        height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+        background-color:#333;
+        color: white;
+        padding: 20px;
+}
+    .nav-links{
+        list-style:none;
+        display: flex;
+    }
+    .nav-links li{
+        margin: 15px;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+    .nav-links a:hover{
+        color:burlywood;
+    }
+    .hero{
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    .hero h2{
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .hero p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .section{
+        margin:10px;
+    }
+    .section h2{
+        margin-bottom:10px;
+        color: #4CAF50;
+    }
+    .section h2:hover{
+        color:  #333;
+    }
+    .section p{
+        margin-bottom: 20px;
+    }
+    .section ul{
+        margin:10px;
+    }
+    footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+  }
+  .logo {
+    cursor: pointer;
+  }
+    </style>
+    <body>
+       <header>
+        <nav>
+            <div class="logo"
+                onclick="window.location.href='landingpage.html';" >
+              
+      <h1>MadiCompany</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+    <section>
+    <div class="hero">
+        <h2>Software development</h2>
+        <p>We create software solutions to optimize your business processes, from web applications to complex integrated solutions.</p>
+    </div>
+    <div class="section">
+        <h2>Our Software Development Services</h2>
+        <p>We offer custom software development to meet the specific needs of your business. Whether it's creating a web application, a mobile app, or integrated software solutions, we are ready to deliver high-quality products that help streamline processes and enhance the performance of your company.</p>
+        <h2>Why choose our services?</h2>
+        <p>Our experience in software development allows us to offer innovative solutions that are scalable, secure, and easy to maintain. We have a rigorous testing process and provide continuous support after delivery.</p>
+
+        <h2>What types of solutions do we develop?</h2>
+        <ul>
+            <li>Custom web applications</li>
+            <li>Mobile applications for iOS and Android</li>
+            <li>Enterprise Resource Planning (ERP) systems</li>
+            <li>Customer Relationship Management (CRM) systems</li>
+            <li>Business process automation</li>
+        </ul>
+
+        <h2>The benefits of software solutions</h2>
+        <ul>
+            <li>Increasing the efficiency and productivity of your business</li>
+            <li>Automation of repetitive processes</li>
+            <li>Accessibility from any device</li>
+            <li>Scalability and flexibility according to your needs</li>
+            <li>Advanced data security and information protection</li>
+        </ul>
+
+    </div>
+
+    
+    </section>
+        <footer>
+            <p>&copy; 2025 MadiCompany. Toate drepturile rezervate.</p>
+        </footer>
+    </body>
+    
+    </html>

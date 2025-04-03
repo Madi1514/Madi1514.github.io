@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      
+    }
+    html,body{
+      height: 100%;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+    }
+
+    header{
+        background-color:#333;
+        color: white;
+        padding: 20px;
+        
+       
+    }
+    
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo{
+  margin-right: auto;
+}
+    .nav-links{
+        list-style:none;
+        display: flex;
+    }
+    .nav-links li{
+        margin: 15px;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+    .nav-links a:hover{
+        color:burlywood;
+    }
+    .hero{
+        background-color: rgb(249, 246, 240);
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+        
+        
+    }
+  .hero h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .hero p{
+   font-size: 20px;
+   margin-bottom: 40px;
+   color: black;
+  }
+  .btn{
+    background-color: burlywood;
+    border-radius: 30px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    
+  }
+  .btn:hover{
+    background-color: chocolate;
+  }
+  .section-heading{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 5%;
+  }
+ 
+  .service-cards {
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 0px;
+
+    
+}
+   
+.card {
+    background-color: burlywood;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px; /
+ 
+}
+
+  
+  
+  .card a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+ 
+
+    
+  }
+  .card a:hover{
+    background-color: chocolate;
+    padding: 2px 10px;
+    border-radius: 20px;
+  }
+  footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+   
+  }
+
+  .logo{
+    cursor: pointer;
+  }
+ 
+@media screen and (min-width:1000px) {
+    
+    .hero h2 {
+        font-size: 50px;
+    }
+
+    .service-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+}
+
+@media screen and (max-width: 767px) {
+    
+  nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 10px; /* Spațiu între linkuri */
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Reduci puțin fontul */
+        padding: 8px 10px; /* Adaugi puțin spațiu */
+    }
+}
+</style>
+
+<body>
+    <header>
+     
+    <nav>
+      <a href="index.html"></a>
+    
+        <div class="logo">
+          <a href="landingpage.html"></a>
+          
+          
+  <h1>MadiCompany</h1>
+        </div>
+        
+        <ul class="nav-links">
+          
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section id="hero"></section>
+    <div class="hero">
+        <h2>Welcome to MadiCompany</h2>
+        <p>We provide innovative solutions for your business</p>
+        <a href="contact.html"class="btn">Get in Touch with us</a>
+    </div>
+</section>
+<section id="services"  >
+    <h2 class="section-heading">Our Services</h2>
+ <div class="service-cards">
+    <div class="card">
+        <a href="aflamaimulte1.html">Consulting</a>
+        <p>Our consulting services can help you make the right decisions for your business.</p>
+ </div>
+ <div class="card">
+    <a href="aflamaimulte2.html">Web Development</a>
+    <p>Building responsive and modern websites</p>
+ </div>
+ <div class="card">
+    <a href="aflamaimulte3.html">Marketing</a>
+    <p>Our marketing services can help you reach your target audience.</p>
+ </div>
+</section>
+<footer>
+  <p>&copy; 2025 MadiCompany. Toate drepturile rezervate.</p>
+</footer>
+
+</body>
+</html>

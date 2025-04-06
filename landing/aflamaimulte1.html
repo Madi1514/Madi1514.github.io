@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html,body{
+        height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+        background-color:#333;
+        color: white;
+        padding: 20px;
+}
+    .nav-links{
+        list-style:none;
+        display: flex;
+    }
+    .nav-links li{
+        margin: 15px;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+    .nav-links a:hover{
+        color:burlywood;
+    }
+    header{
+        background-color: bisque;
+        padding:20px ;
+        margin-bottom: 10px;
+    }
+    header h1{
+        text-align: center;
+    
+    }
+    .continut{
+        padding: 25px;
+    }
+   
+    .continut h2{
+        margin-bottom: 10px;
+        font-size: 28px;
+        color: #4CAF50;
+    }
+    .continut h2:hover{
+        color: #333;
+    }
+  .continut p{
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  .continut ul{
+    margin:10px;
+  }
+  .btn{
+    color: black;
+    display: inline-block;
+    background-color: #4CAF50;
+    padding: 10px 5px; 
+    border-radius: 10px;
+    margin-top: 50px;
+    text-decoration: none;
+
+  }
+  .btn:hover{
+    background-color: antiquewhite;
+  }
+  footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+  }
+  .logo {
+    cursor: pointer;
+  }
+</style>
+<body>
+    <nav>
+    
+    
+        <div class="logo"
+            onclick="window.location.href='landingpage.html';" >
+          
+  <h1>MadiCompany</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        
+        <h1>Strategic Consulting</h1>
+    </header>
+    <div class="continut">
+        <h2>What is strategic consulting?</h2>
+        <p>Strategic consulting is our dedicated service to help your business achieve its long-term goals. In this service, we work together with you to analyze the current strategy, identify opportunities, and develop a customized action plan that will lead you to the success you desire.</p>
+
+        <h2>Why choose strategic consulting?</h2>
+        <p>Whether you are a business just starting out or a mature company, the right strategy will help you stand out in the market. We offer personalized solutions that will help you make data-driven decisions and implement effective strategies.</p>
+
+        <h2>What benefits will you have?</h2>
+        <ul>
+            <li>Optimize your business processes"</li>
+            <li>Increasing efficiency</li>
+            <li>Access to innovative strategies and personalized solutions</li>
+            <li>Identifying the best growth opportunities</li>
+        </ul>
+        <a href="contact.html"class="btn">Contact us for more details</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 MadiCompany. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
